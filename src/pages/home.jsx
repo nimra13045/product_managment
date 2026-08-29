@@ -26,19 +26,26 @@ useEffect(() => {
 }, [products]);
 
 const saveHandler = () => {
- console.log("Products before save:", products);
-   saveProducts(products);
+  if (products.length === 0) {
+    alert("Please add a product first!");
+    return;
+  }
 
-   saveRecord({
-      id: Date.now(),
-      date: new Date().toLocaleString(),
-        products: products.map((product) => ({
-        ...product,
-      })),
-   });
+  const newRecord = {
+    id: Date.now(),
+    date: new Date().toLocaleString(),
+    products: products.map((product) => ({
+      ...product,
+    })),
+  };
 
-   alert("Saved!");
-}
+  saveRecord(newRecord);
+
+  // Clear current products after saving
+  setproducts([]);
+
+  alert("Saved!");
+};
 
   return (
     <div>
