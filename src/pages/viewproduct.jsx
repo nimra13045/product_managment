@@ -1,4 +1,4 @@
-import RecordList from "../component/Recordlist";
+import RecordList from "../component/recordlist";
 import { useEffect, useState } from "react";
 import { getRecords } from "../data/localstore";
 import Recorddetail from "../component/recorddetail";
