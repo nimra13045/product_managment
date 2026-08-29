@@ -1,0 +1,73 @@
+#heading1{
+font-size: 30px;
+}
+#table1{
+width:100%;
+font-size: 20px;
+}
+.table1{
+  width:100%;
+font-size: 20px;
+}
+#head{
+  background-color: rgb(2, 14, 26);
+}
+#btn1{
+
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    height: 31px;
+    width: 100px;
+    padding: 10px;
+    position: absolute;
+    left: 130px;
+    margin: 6px;
+}
+#btn2{
+  background-color: #cc5151;
+    color: white;
+    border: none;
+    cursor: pointer;
+    height: 31px;
+    width: 100px;
+    padding: 10px;
+    position: absolute;
+    left: 238px;
+    margin: 6px; 
+}
+.btn2{
+
+  background-color: #cc5151;
+    color: white;
+    border: none;
+    cursor: pointer;
+    height: 31px;
+    width: 100px;
+    padding: 10px;
+    margin: 6px; 
+
+}
+#btn3{
+  background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    height: 31px;
+    width: 121px;
+    padding: 10px;
+    position: absolute;
+    left: 346px;
+    margin: 6px; 
+}
+.btn3{
+ background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    height: 31px;
+    width: 121px;
+    padding: 10px;
+    margin: 6px; 
+}
