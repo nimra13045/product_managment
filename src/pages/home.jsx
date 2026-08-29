@@ -32,7 +32,9 @@ const saveHandler = () => {
    saveRecord({
       id: Date.now(),
       date: new Date().toLocaleString(),
-      products
+        products: products.map((product) => ({
+        ...product,
+      })),
    });
 
    alert("Saved!");
