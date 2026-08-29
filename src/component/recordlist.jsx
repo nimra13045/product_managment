@@ -28,16 +28,9 @@ setRecords(update);
 
             <tr key={record.id}>
               <td>{record.date}</td>
-              <td>
-  {record.products.map((product) => product.name).join(", ")}
-</td>
+ <td>{record.products[0]?.name}</td>
 
-<td>
-  {record.products.reduce(
-    (total, product) => total + product.quantity,
-    0
-  )}
-</td>
+  <td>{record.products[0]?.quantity}</td>
               <td>
                <button className="btn3" onClick={() => navigate(`/detail/${record.id}`)}>View Detail</button>
               </td>
